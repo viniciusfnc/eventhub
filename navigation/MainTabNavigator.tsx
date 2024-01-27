@@ -1,30 +1,20 @@
-import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import TabBarIcon from '../components/TabBarIcon'
-import HomeScreen from '../screens/HomeScreen'
-import MessagesScreen from '../screens/MessagesScreen'
-import ProfileScreen from '../screens/ProfileScreen'
-import TopPicksScreen from '../screens/TopPicksScreen'
-import { createStackNavigator } from 'react-navigation-stack';
 import { Icon } from '@rneui/themed';
+import React from 'react';
+import MessagesScreen from '../screens/messages/MessagesScreen';
+import ProfileScreen from '../screens/profile/ProfileScreen';
+import EventsScreen from '../screens/events/EventsScreen';
 
 const Tab = createBottomTabNavigator();
 
 
-
 export const MainTabNavigator = () => (
 
-  <Tab.Navigator>
-    <Tab.Screen name="TopPicks" component={TopPicksScreen} options={{
+  <Tab.Navigator >
+    <Tab.Screen name="Buscar Eventos" component={EventsScreen} options={{
       tabBarLabel: 'Events',
       tabBarIcon: ({ color, size }) => (
         <Icon name='home' type='ionicon'/>
-      ),
-    }}
-    />
-    <Tab.Screen name="Match" component={HomeScreen} options={{
-      tabBarIcon: ({ color, size }) => (
-        <Icon name='heart' type='ionicon'/>
       ),
     }}
     />

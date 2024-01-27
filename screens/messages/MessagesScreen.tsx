@@ -1,6 +1,6 @@
 import React from 'react'
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native'
-import { Messages } from '../constants/Messages'
+import { Messages } from '../../constants/Messages'
 import { ListItem } from '@rneui/themed';
 import { Avatar } from 'react-native-elements';
 
