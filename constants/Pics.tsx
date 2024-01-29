@@ -155,3 +155,47 @@ export const TopPicksScreenPics = shuffleArray([
     caption: '21h left',
   },
 ])
+
+export const Events = shuffleArray([
+  {
+    pic: require('../assets/images/women/women11.jpg'),
+    title: 'Founders Live Lisbon',
+    date: new Date(),
+    locale: 'Lisbon-PT',
+    producer: 'Serena Productions',
+    fee: '$ 200 / day'
+  },
+  {
+    pic: require('../assets/images/women/women11.jpg'),
+    title: 'Noite de Fado',
+    date: new Date(),
+    locale: 'Lisbon-PT',
+    producer: 'Rituais',
+    fee: '$ 200 / day'
+  },
+  {
+    pic: require('../assets/images/women/women11.jpg'),
+    title: 'Tim Bernardes',
+    date: new Date(),
+    locale: 'Lisbon-PT',
+    producer: 'PMP Eventos',
+    fee: '$ 200 / day'
+  },
+  {
+    pic: require('../assets/images/women/women11.jpg'),
+    title: 'Cappella Mediterranea',
+    date: new Date(),
+    locale: 'Lisbon-PT',
+    producer: 'Serena Productions',
+    fee: '$ 200 / day'
+  },
+  {
+    pic: require('../assets/images/women/women11.jpg'),
+    title: 'Alma Tree',
+    date: new Date(),
+    locale: 'Lisbon-PT',
+    producer: 'Rituais',
+    fee: '$ 200 / day'
+  }
+])
+

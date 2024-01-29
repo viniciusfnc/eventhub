@@ -10,11 +10,13 @@ const Tab = createBottomTabNavigator();
 
 export const MainTabNavigator = () => (
 
-  <Tab.Navigator >
+  <Tab.Navigator  screenOptions={{
+    headerShown: false,
+    tabBarShowLabel: false
+  }}>
     <Tab.Screen name="Buscar Eventos" component={EventsScreen} options={{
-      tabBarLabel: 'Events',
       tabBarIcon: ({ color, size }) => (
-        <Icon name='home' type='ionicon'/>
+        <Icon name='search' type='ionicon'/>
       ),
     }}
     />
