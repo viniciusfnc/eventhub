@@ -33,7 +33,7 @@ class LoginScreen extends React.Component {
          
           <Button
             title="Entrar"
-            onPress={() => this.props.navigation.navigate("Main")}
+            onPress={() => this.props.navigation.navigate("Home")}
             titleStyle={{ fontWeight: "700" }}
             buttonStyle={{
               backgroundColor: "#514EB5",
@@ -49,7 +49,7 @@ class LoginScreen extends React.Component {
           />
           <Button
             title="Cadastrar"
-            onPress={() => this.props.navigation.navigate("Main")}
+            onPress={() => this.props.navigation.navigate("Home")}
             buttonStyle={{
               borderColor: "#514EB5",
               borderRadius: 30,
@@ -79,15 +79,15 @@ class LoginScreen extends React.Component {
             <SocialIcon
               title="Google"
               type="google"
-              onPress={() => this.props.navigation.navigate("Main")}
+              onPress={() => this.props.navigation.navigate("Home")}
             />
             <SocialIcon
               title="Facebook"
               type="facebook"
-              onPress={() => this.props.navigation.navigate("Main")}
+              onPress={() => this.props.navigation.navigate("Home")}
             />
             <SocialIcon
-              onPress={() => this.props.navigation.navigate("Main")}
+              onPress={() => this.props.navigation.navigate("Home")}
               style={{ backgroundColor: "black" }}
               title="Apple"
               type="apple"

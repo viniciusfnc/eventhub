@@ -1,27 +1,7 @@
+import { Icon as Iconre } from "@rneui/themed";
+import { Center, Flex, Input } from "native-base";
 import React from "react";
-import {
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  View,
-  useWindowDimensions,
-} from "react-native";
-import { TopPicksScreenPics } from "../../constants/Pics";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { Text, Tile } from "@rneui/base";
-import {
-  Heading,
-  Input,
-  Divider,
-  Flex,
-  Spacer,
-  Center,
-  Container,
-  Box,
-  Image,
-  Icon,
-  SearchIcon,
-} from "native-base";
+import { StatusBar, StyleSheet, useWindowDimensions } from "react-native";
 import { SceneMap, TabView } from "react-native-tab-view";
 import EventListScreen from "./EventListScreen";
 import EventMapScreen from "./EventMapScreen";
@@ -58,15 +38,21 @@ export default function EventsScreen() {
         <Input
           variant="rounded"
           mt="3"
+          bg={"white"}
           InputLeftElement={
-            <Icon
-              m="2"
-              ml="3"
-              size="6"
-              color="gray.400"
-              as={<SearchIcon name="search" />}
+            <Center ml={"2"}>
+              <Iconre color="grey" name="search" type="font-awesome" />
+            </Center>
+          }
+          InputRightElement={
+            <Iconre
+              raised
+              name="sliders"
+              type="font-awesome"
+              onPress={() => console.log("hello")}
             />
           }
+          style={{ fontSize: 18 }}
           placeholder="Pesquisar"
         />
       </Flex>
